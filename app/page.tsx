@@ -49,8 +49,8 @@ export default function Home() {
         :
         <Container sx={{ display: "flex", justifyContent: "center", padding: 0 }}>
           <Box sx={{ bgcolor: "#121212", height: "100vh", width: "100%", justifyContent: "center" }}>
-            <Container sx={{ height: '5vh', padding: '2vh 0 0 0 ' }}>
-              <Link href="/welcome" className="skip">skip</Link>
+            <Container sx={{ height: '5vh', display: 'flex', alignItems: 'end' }}>
+              <Link href="/welcome" className="skip">pular</Link>
             </Container>
             <Carousel activeIndex={activeIndex} controls={false} slide={false} interval={null} fade>
               <Carousel.Item>
