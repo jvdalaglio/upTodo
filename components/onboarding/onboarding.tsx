@@ -49,7 +49,7 @@ export default function Onboarding() {
         <Container sx={{ display: "flex", justifyContent: "center", padding: 0 }}>
           <Box sx={{ bgcolor: "#121212", height: "100vh", width: "100%", justifyContent: "center" }}>
             <Container sx={{ height: '5vh', display: 'flex', alignItems: 'end' }}>
-              <Link href="/welcome" className="skip"></Link>
+              <Link href="/welcome" className="skip">Pular</Link>
             </Container>
             <Container>
 

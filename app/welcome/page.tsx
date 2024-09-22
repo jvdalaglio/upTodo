@@ -23,7 +23,7 @@ export default function Welcome() {
             </p>
           </Container>
         </Box>
-        <Box sx={{ heigth: '30vh', width: "90%", display: 'flex', flexDirection: 'column', gap: '3%' }}>
+        <Box sx={{ heigth: '30vh', width: "80%", display: 'flex', flexDirection: 'column', gap: '3%' }}>
           <Button sx={{ color: '#FFFFFF', bgcolor: '#8875FF', height: '48px', marginBottom: '3%' }}>Entrar</Button>
           <Button sx={{ color: '#D9D9D9', height: '48px', borderColor: '#8875FF' }} variant="outlined">Registrar-se</Button>
         </Box>
