@@ -3,19 +3,19 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import "./globals.css";
 
 export const metadata: Metadata = {
- title: "UpTodo",
+  title: "UpTodo",
 };
 
 export default function RootLayout({
- children,
+  children,
 }: Readonly<{
- children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
- return (
-  <html lang="en">
-   <body>
-    <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
-   </body>
-  </html>
- );
+  return (
+    <html lang="pt-BR">
+      <body>
+        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
+      </body>
+    </html>
+  );
 }
