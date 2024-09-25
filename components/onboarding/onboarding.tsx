@@ -4,11 +4,12 @@ import { Container } from "@mui/material";
 import Image from "next/image";
 import { Carousel } from "react-bootstrap";
 import Box from "@mui/material/Box";
-import { Button, CssBaseline } from "@mui/material";
+import { CssBaseline } from "@mui/material";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import './onboarding.scss'
+import { CustomButton } from "../button/button";
 
 export default function Onboarding() {
   const [showOnboarding, setShowOnboarding] = useState(true);
@@ -86,8 +87,8 @@ export default function Onboarding() {
               </Carousel>
             </Container>
             <Container sx={{ height: '25vh', padding: "0 8%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <Button sx={{ color: '#D9D9D9', height: '48px' }} onClick={handlePrev}>Voltar</Button>
-              <Button sx={{ color: '#FFFFFF', bgcolor: '#8875FF', height: '48px' }} onClick={handleNext}>{activeIndex === 2 ? "Começar" : "Próximo"}</Button>
+              <CustomButton onClick={handlePrev} secondary>Voltar</CustomButton>
+              <CustomButton onClick={handleNext} primary>{activeIndex === 2 ? "Começar" : "Próximo"}</CustomButton>
             </Container>
           </Box>
         </Container>
