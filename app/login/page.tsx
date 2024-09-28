@@ -9,19 +9,25 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { ThemeProvider } from '@mui/material/styles';
 import Image from "next/image";
 import theme from '../../public/theme/mui'
+import { useRouter } from 'next/navigation';
 import './page.scss';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState<string>('');
+  const router = useRouter();
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
     event.preventDefault();
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      console.log('Usuário logado:', email);
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+
+      sessionStorage.setItem('user', JSON.stringify(user));
+      router.push('/home');
+      console.log('Usuário logado:', user.email);
     } catch (error: Error | unknown) {
       if (error instanceof Error) {
         setError(error.message);
