@@ -12,7 +12,6 @@ declare module '@mui/material/styles' {
   }
 }
 
-// Update the Button's color options to include an ochre option
 declare module '@mui/material/Button' {
   interface ButtonPropsColorOverrides {
     primaryColor: true;

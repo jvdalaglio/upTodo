@@ -1,8 +1,75 @@
 .title {
   color: rgba(255, 255, 255, 0.87);
-  font-family: Lato;
+  font-family: sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.form-label {
+  color: rgba(255, 255, 255, 0.87);
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150.5%;
+}
+
+.form-input {
+  border-radius: 4px;
+  border: 0.8px solid #979797;
+  background: #1D1D1D;
+  height: 3rem;
+  padding-left: 1rem;
+
+  &::placeholder {
+    color: #535353;
+  }
+}
+
+.input-section {
+  margin-bottom: 3rem;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #979797;
+  margin: 0 10px;
+}
+
+.separator span {
+  white-space: nowrap;
+}
+
+.alternative-login {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.alternative-login-button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.register-link {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150.5%;
+
+  &::before {
+    content: 'Não tem uma conta?';
+    color: #979797;
+  }
 }

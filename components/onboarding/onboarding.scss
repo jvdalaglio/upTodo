@@ -1,7 +1,3 @@
-* {
-  font-family: Lato;
-}
-
 .carousel-indicators {
   top: 355px;
 
@@ -16,8 +12,8 @@
 
 .carousel-caption {
   top: 365px;
-  left: 10%;
-  width: 80%;
+  left: 5%;
+  width: 88%;
 
   @media screen and (min-width: 420px) {
     top: 460px;
@@ -32,7 +28,6 @@
 
 .title-onboarding {
   color: rgba(255, 255, 255, 0.87);
-  font-family: Lato;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -47,7 +42,6 @@
   @media screen and (min-width: 420px) {
     color: rgba(255, 255, 255, 0.87);
     text-align: center;
-    font-family: Lato;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -58,7 +52,6 @@
 
 .skip {
   color: rgba(255, 255, 255, 0.44);
-  font-family: Lato;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
